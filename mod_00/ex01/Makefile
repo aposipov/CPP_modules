@@ -1,5 +1,5 @@
 
-NAME	=	megaphone
+NAME	=	phonebook
 
 CC		=	c++
 W_FLAGS	=	-Wall -Wextra -Werror
@@ -14,8 +14,8 @@ RED= \033[4;31m
 GREEN= \033[0;32m
 NC= \033[0;0m
 
-SRC		=	megaphone.cpp
-
+INC		=	contact.hpp phonebook.hpp
+SRC		=	main.cpp contact.cpp phonebook.cpp
 
 all:		$(NAME)
 
@@ -23,7 +23,7 @@ $(NAME):	$(OBJ)
 			$(CC) $(W_FLAGS) $(S_FLAGS) $(OBJ) -o $(NAME)
 			@echo -e "$(GREEN)\t\n megaphone compiled!\n $(NC)"
 
-%.o : %.cpp	Makefile $(HEADER)
+%.o : %.cpp	Makefile $(INC)
 			$(CC) $(W_FLAGS) $(S_FLAGS) -c $< -o $@
 
 clean:
@@ -37,6 +37,3 @@ fclean:		clean
 re:			fclean all
 
 test:		$(NAME)
-			./megaphone "shhhhh... I think the students are asleep..."
-			./megaphone Damnit " ! " "Sorry students, I thought this thing was off."
-			./megaphone
