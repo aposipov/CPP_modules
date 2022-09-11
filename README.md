@@ -6,4 +6,6 @@ Namespaces, classes, member functions, stdio streams,initialization lists, stati
 <details>
 <summary>module_01</summary>
 description
-</details>
+</details>  
+
+## usefull
