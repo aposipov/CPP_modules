@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 				j++;
 			}
 			i++;
-			std::cout << " ";
+			//std::cout << " ";
 		}
 		std::cout << std::endl;
 	}

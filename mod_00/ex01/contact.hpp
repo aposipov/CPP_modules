@@ -3,7 +3,6 @@
 # define CONTACT_HPP
 
 #include <iostream>
-//#include <cstring>
 
 class Contact {
 	public:
@@ -11,6 +10,7 @@ class Contact {
 		~Contact();
 
 		void	add_contact();
+		void	show_contact();
 
 	private:
 		std::string first_name;

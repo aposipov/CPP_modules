@@ -21,7 +21,7 @@ all:		$(NAME)
 
 $(NAME):	$(OBJ)
 			$(CC) $(W_FLAGS) $(S_FLAGS) $(OBJ) -o $(NAME)
-			@echo -e "$(GREEN)\t\n megaphone compiled!\n $(NC)"
+			@echo -e "$(GREEN)\t\n Phonebook compiled!\n $(NC)"
 
 %.o : %.cpp	Makefile $(INC)
 			$(CC) $(W_FLAGS) $(S_FLAGS) -c $< -o $@
