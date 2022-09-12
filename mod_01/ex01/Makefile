@@ -15,7 +15,7 @@ GREEN= \033[0;32m
 NC= \033[0;0m
 
 INC		=	Zombie.hpp
-SRC		=	main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
+SRC		=	main.cpp Zombie.cpp zombieHorde.cpp
 
 all:		$(NAME)
 
