@@ -12,7 +12,7 @@ class Contact {
 		void	add_contact();
 		void	show_contact();
 
-	private:
+//	private:
 		std::string first_name;
 		std::string last_name;
 		std::string nickname;

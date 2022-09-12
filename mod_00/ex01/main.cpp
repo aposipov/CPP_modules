@@ -19,7 +19,7 @@ void print_header()
 int main()
 {
 	Phonebook ph_book;
-	int i = 0;
+	int i = 1;
 	int exit_flag = 0;
 	std::string input;
 
@@ -29,15 +29,19 @@ int main()
 		std::cout << "Enter the command: ";
 		std::cin >> input;
 		if (input == "ADD")
+		{
 			ph_book.add_new_contact(i);
-		else if (input == "SHOW") //
-			ph_book.show(i);
+			if ( i == 8)
+				i = 0;
+			else
+				i++;
+		}
 		else if (input == "SEARCH")
-			;
+			ph_book.search();
 		else if (input == "EXIT")
 			exit_flag = 1;
 		else
-			std::cout << "Wrong command!" << std::endl;
+			std::cerr << "Wrong command!" << std::endl;
 	}
 	return (0);
 }
