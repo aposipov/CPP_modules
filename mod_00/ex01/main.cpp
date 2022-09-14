@@ -16,8 +16,7 @@ void print_header()
 int main()
 {
 	Phonebook ph_book;
-	int i = 1;
-//	int exit_flag = 0;
+	int i = 0;
 	std::string input;
 
 	print_header();
@@ -28,21 +27,15 @@ int main()
 		if (input == "ADD")
 		{
 			ph_book.add(i);
-			if ( i == 8)
-				i = 1;
+			if ( i == 7)
+				i = 0;
 			else
 				i++;
 		}
 		else if (input == "SEARCH")
-//		{
-//			if ( i == 1)
-//				std::cout << "Phonebook is empty!" << std::endl;
-//			else
-				ph_book.search();
-//		}
+			ph_book.search();
 		else if (input == "EXIT")
 			std::cout << "Exit!" << std::endl;
-//			exit_flag = 1;
 		else
 			std::cout << "Wrong command!" << std::endl;
 	}

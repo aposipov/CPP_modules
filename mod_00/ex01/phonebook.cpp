@@ -4,7 +4,7 @@
 Phonebook::Phonebook()
 {
 	//std::cout << "Phonebook Call constructor\n";
-	this->_count = 1;
+	this->_count = 0;
 	return ;
 }
 
@@ -22,7 +22,7 @@ int Phonebook::get_count()
 void Phonebook::add(int i)
 {
 	std::string str;
-	if (this->get_count() <= 8)
+	if (this->get_count() <= 7)
 		this->_count += 1;
 	this->_contact[i].add_contact();
 }
@@ -42,7 +42,7 @@ std::string check_len(std::string str)
 
 void Phonebook::search()
 {
-	int i = 1;
+	int i = 0;
 	int index = this->get_count();
 	std::string str;
 
@@ -65,7 +65,7 @@ void Phonebook::search()
 	std::cout << "Enter index of contact to show more info: ";
 	if (std::cin >> i)
 	{
-		if (i >= 1 && i <= index)
+		if (i >= 0 && i < index)
 			this->_contact[i].show_contact();
 		else
 			std::cout << "Index is not correct!" << std:: endl;

@@ -6,7 +6,9 @@
 #include <iomanip>
 
 class Phonebook {
+
 public:
+
 	Phonebook();
 	~Phonebook();
 	void 	add(int i);
@@ -14,6 +16,7 @@ public:
 	int 	get_count();
 
 private:
+
 	int 	_count ;
 	Contact _contact[8];
 };

@@ -50,13 +50,3 @@ std::string Contact::get_nickname(void)
 {
 	return this->_nickName;
 }
-
-std::string Contact::get_phone_number(void)
-{
-	return this->_phoneNumber;
-}
-
-std::string Contact::get_darkest_secret(void)
-{
-	return this->_darkestSecret;
-}
