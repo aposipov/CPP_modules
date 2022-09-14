@@ -1,6 +1,3 @@
-//
-// Created by user on 08.09.22.
-//
 
 #include "contact.hpp"
 #include "phonebook.hpp"
@@ -20,28 +17,34 @@ int main()
 {
 	Phonebook ph_book;
 	int i = 1;
-	int exit_flag = 0;
+//	int exit_flag = 0;
 	std::string input;
 
 	print_header();
-	while (exit_flag == 0)
+	while (input != "EXIT")
 	{
 		std::cout << "Enter the command: ";
 		std::cin >> input;
 		if (input == "ADD")
 		{
-			ph_book.add_new_contact(i);
+			ph_book.add(i);
 			if ( i == 8)
-				i = 0;
+				i = 1;
 			else
 				i++;
 		}
 		else if (input == "SEARCH")
-			ph_book.search();
+//		{
+//			if ( i == 1)
+//				std::cout << "Phonebook is empty!" << std::endl;
+//			else
+				ph_book.search();
+//		}
 		else if (input == "EXIT")
-			exit_flag = 1;
+			std::cout << "Exit!" << std::endl;
+//			exit_flag = 1;
 		else
-			std::cerr << "Wrong command!" << std::endl;
+			std::cout << "Wrong command!" << std::endl;
 	}
 	return (0);
 }

@@ -1,6 +1,3 @@
-//
-// Created by user on 02.09.22.
-//
 
 #include "contact.hpp"
 
@@ -16,29 +13,50 @@ Contact::~Contact()
 	return ;
 }
 
-
-
 void Contact::add_contact()
 {
-	//std::cout << this << std::endl;
-
 	std::cout << "Input first_name: ";
-	std::cin >> first_name;
+	std::cin >> this->_firstName;
 	std::cout << "Input last_name: ";
-	std::cin >> last_name;
+	std::cin >> this->_lastName;
 	std::cout << "Input nickname: ";
-	std::cin >> nickname;
+	std::cin >> this->_nickName;
 	std::cout << "Input phone_number: ";
-	std::cin >> phone_number;
+	std::cin >> this->_phoneNumber;
 	std::cout << "Input darkest_secret: ";
-	std::cin >> darkest_secret;
+	std::cin >> this->_darkestSecret;
 }
 
 void Contact::show_contact()
 {
-	std::cout << "first_name: " << this->first_name << std::endl;
-	std::cout << "last_name: " << this->last_name << std::endl;
-	std::cout << "nickname: " << this->nickname << std::endl;
-	std::cout << "phone_number: " << this->phone_number << std::endl;
-	std::cout << "darkest_secret: " << this->darkest_secret << std::endl;
+	std::cout << "first_name: ....... " << this->_firstName << std::endl;
+	std::cout << "last_name: ........ " << this->_lastName << std::endl;
+	std::cout << "nickname: ......... " << this->_nickName << std::endl;
+	std::cout << "phone_number: ..... " << this->_phoneNumber << std::endl;
+	std::cout << "darkest_secret: ... " << this->_darkestSecret << std::endl;
+}
+
+std::string Contact::get_first_name(void)
+{
+	return this->_firstName;
+}
+
+std::string Contact::get_last_name(void)
+{
+	return this->_lastName;
+}
+
+std::string Contact::get_nickname(void)
+{
+	return this->_nickName;
+}
+
+std::string Contact::get_phone_number(void)
+{
+	return this->_phoneNumber;
+}
+
+std::string Contact::get_darkest_secret(void)
+{
+	return this->_darkestSecret;
 }

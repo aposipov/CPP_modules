@@ -2,7 +2,22 @@
 // Created by user on 12.09.22.
 //
 
-#ifndef CPP_MODULES_ZOMBIE_HPP
-#define CPP_MODULES_ZOMBIE_HPP
+#ifndef ZOMBIE_HPP
+#define ZOMBIE_HPP
 
-#endif //CPP_MODULES_ZOMBIE_HPP
+#include <iostream>
+
+class Zombie{
+public:
+	Zombie();
+	Zombie(std::string name);
+	~Zombie();
+	void announce(void);
+private:
+	std::string name;
+};
+
+Zombie* newZombie( std::string name );
+void randomChump( std::string name );
+
+#endif

@@ -1,24 +1,21 @@
-//
-// Created by user on 08.09.22.
-//
 
 #ifndef PHONEBOOK_HPP
 #define PHONEBOOK_HPP
 
 #include "contact.hpp"
-#include <iomanip> //
+#include <iomanip>
 
 class Phonebook {
-	public:
-		Phonebook();
-		~Phonebook();
-		void add_new_contact(int i);
-		void search();
+public:
+	Phonebook();
+	~Phonebook();
+	void 	add(int i);
+	void 	search();
+	int 	get_count();
 
-	private:
-		int get_count();
-		int count ;
-		Contact contact[8];
+private:
+	int 	_count ;
+	Contact _contact[8];
 };
 
 #endif

@@ -1,13 +1,10 @@
-//
-// Created by user on 08.09.22.
-//
 
 #include "phonebook.hpp"
 
 Phonebook::Phonebook()
 {
 	//std::cout << "Phonebook Call constructor\n";
-	this->count = 1;
+	this->_count = 1;
 	return ;
 }
 
@@ -19,16 +16,15 @@ Phonebook::~Phonebook()
 
 int Phonebook::get_count()
 {
-	return this->count;
+	return this->_count;
 }
 
-void Phonebook::add_new_contact(int i)
+void Phonebook::add(int i)
 {
 	std::string str;
-
 	if (this->get_count() <= 8)
-		this->count += 1;
-	this->contact[i].add_contact();
+		this->_count += 1;
+	this->_contact[i].add_contact();
 }
 
 std::string check_len(std::string str)
@@ -58,22 +54,22 @@ void Phonebook::search()
 	std::cout << "+----------+----------+----------+----------+\n";
 	while (index > i)
 	{
-		std::cout << "|" << std::setw(10) << i  << "|" \
-			<< std::setw(10) << check_len(this->contact[i].first_name) << "|" \
-			<< std::setw(10) << check_len(this->contact[i].last_name) << "|" \
-			<< std::setw(10) << check_len(this->contact[i].nickname) << "|" \
-			<< std:: endl;
+		std::cout << "|" << std::setw(10) << i << "|" \
+ 			<< std::setw(10) << check_len(_contact[i].get_first_name()) << "|" \
+ 			<< std::setw(10) << check_len(_contact[i].get_last_name()) << "|" \
+ 			<< std::setw(10) << check_len(_contact[i].get_nickname()) << "|" \
+ 			<< std:: endl;
 		std::cout << "+----------+----------+----------+----------+\n";
 		i++;
 	}
-	std::cout << "Enter index of contact to show more info :";
+	std::cout << "Enter index of contact to show more info: ";
 	if (std::cin >> i)
 	{
-		if (i >= 0 && i < index)
-			this->contact[i].show_contact();
+		if (i >= 1 && i <= index)
+			this->_contact[i].show_contact();
 		else
-			std::cerr << "Entered index is not correct" << std:: endl;
+			std::cout << "Index is not correct!" << std:: endl;
 	}
 	else
-		std::cerr << "std::cin error" << std:: endl;
+		std::cout << "std::cin error" << std:: endl;
 }

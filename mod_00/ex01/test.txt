@@ -1,9 +1,0 @@
-ADD
-alex
-osipov
-apos
-123
-test
-SHOW
-SHOW
-EXIT

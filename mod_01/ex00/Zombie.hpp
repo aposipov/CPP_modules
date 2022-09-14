@@ -2,10 +2,10 @@
 // Created by user on 12.09.22.
 //
 
-#include <iostream>
-
 #ifndef ZOMBIE_HPP
 #define ZOMBIE_HPP
+
+#include <iostream>
 
 class Zombie{
 public:
