@@ -1,10 +1,5 @@
-//
-// Created by user on 12.09.22.
-//
 
 #include "Zombie.hpp"
-
-Zombie::Zombie(){}; //?
 
 Zombie::Zombie(std::string name)
 {

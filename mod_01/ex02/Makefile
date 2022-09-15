@@ -1,5 +1,5 @@
 
-NAME	=	zombie
+NAME	=	main
 
 CC		=	c++
 W_FLAGS	=	-Wall -Wextra -Werror
@@ -14,8 +14,8 @@ RED= \033[4;31m
 GREEN= \033[0;32m
 NC= \033[0;0m
 
-INC		=	Zombie.hpp
-SRC		=	main.cpp Zombie.cpp zombieHorde.cpp
+INC		=
+SRC		=	main.cpp
 
 all:		$(NAME)
 

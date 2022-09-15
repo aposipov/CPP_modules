@@ -21,7 +21,7 @@ all:		$(NAME)
 
 $(NAME):	$(OBJ)
 			$(CC) $(W_FLAGS) $(S_FLAGS) $(OBJ) -o $(NAME)
-			@echo -e "$(GREEN)\t\n Account compiled!\n $(NC)"
+			@echo -e "$(GREEN)\t\n Compiled!\n $(NC)"
 
 %.o : %.cpp	Makefile $(INC)
 			$(CC) $(W_FLAGS) $(S_FLAGS) -c $< -o $@
