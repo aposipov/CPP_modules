@@ -12,5 +12,6 @@ add_executable(CPP_modules
 #		mod_01/ex01/main.cpp mod_01/ex01/Zombie.cpp mod_01/ex01/zombieHorde.cpp
 #		mod_01/ex02/main.cpp
 #		mod_01/ex03/main.cpp mod_01/ex03/Weapon.cpp mod_01/ex03/HumanA.cpp  mod_01/ex03/HumanB.cpp
-		mod_01/ex04/main.cpp
+#		mod_01/ex04/main.cpp
+		mod_01/ex05/main.cpp mod_01/ex05/harl.cpp
 		)
