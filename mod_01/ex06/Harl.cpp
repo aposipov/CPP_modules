@@ -1,5 +1,5 @@
 
-#include "harl.hpp"
+#include "Harl.hpp"
 
 Harl::Harl(void)
 {
@@ -38,22 +38,39 @@ void Harl::error(void)
 void Harl::complain( std::string level )
 {
 	std::string arr[4] = {"DEBUG",
-							 "INFO",
-							 "WARNING",
-							 "ERROR"};
-	void (Harl::*func[4])(void) = {
-			&Harl::debug,
-			&Harl::info ,
-			&Harl::warning,
-			&Harl::error};
+						  "INFO",
+						  "WARNING",
+						  "ERROR"};
 
-	for (int i = 0; i < 4; i++)
+	int i;
+	for (i = 0; i < 4; i++)
 	{
 		if (level == arr[i])
-		{
-			(this->*func[i])();
-			return ;
-		}
+			break;
 	}
-	std::cout << "Wrong input" << std::endl;
+	switch (i)
+	{
+		case 0:
+			debug();
+			info();
+			warning();
+			error();
+			break;
+		case 1:
+			info();
+			warning();
+			error();
+			break;
+		case 2:
+			warning();
+			error();
+			break;
+		case 3:
+			error();
+			break;
+
+		default:
+			std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
+			break;
+	}
 }

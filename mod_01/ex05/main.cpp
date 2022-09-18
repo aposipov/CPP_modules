@@ -1,17 +1,15 @@
 
-#include "harl.hpp"
+#include "Harl.hpp"
 
 int	main(void)
 {
 	Harl man;
 
 	man.complain("DEBUG");
-//	man.complain("INFO");
+	man.complain("INFO");
 	man.complain("WARNING");
-//	man.complain("ERROR");
-	man.complain("ERRORAA");
-//	man.complain("WARNINGAA");
-//	man.complain("WARNING");
-//	man.complain("WARNING");
+	man.complain("ERROR");
+
+	man.complain("ER");
 	return 0;
 }
