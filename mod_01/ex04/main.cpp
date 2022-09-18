@@ -46,11 +46,8 @@ int main(int argc, char** argv)
 		return 1;
 	}
 	std::string in_file(argv[1]);
-//	std::cout << in_file << std::endl;//
 	std::string s1(argv[2]);
-//	std::cout << s1 << std::endl;//
 	std::string s2(argv[3]);
-//	std::cout << s2 << std::endl;//
 
 	if (in_file.empty() || s1.empty() || s2.empty())
 	{
@@ -58,10 +55,7 @@ int main(int argc, char** argv)
 		return 1;
 	}
 	std::string text = read_file(in_file);
-	std::cout << text << std::endl;
-
 	std::string out_file = in_file + ".replace";
-//	std::cout << out_file << std::endl;//
 	write_file(out_file, text, s1, s2);
 	return 0;
 }
