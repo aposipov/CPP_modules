@@ -7,5 +7,12 @@ Namespaces, classes, member functions, stdio streams,initialization lists, stati
 <summary>module_01</summary>
 description
 </details>  
+<details>
+<summary>module_02</summary>
+https://www.cprogramming.com/tutorial/floating_point/understanding_floating_point.html  
+
+https://www.cprogramming.com/tutorial/floating_point/understanding_floating_point_representation.html  
+https://www.cprogramming.com/tutorial/floating_point/understanding_floating_point_printing.html
+</details> 
 
 ## usefull
