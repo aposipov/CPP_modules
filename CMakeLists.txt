@@ -17,4 +17,6 @@ add_executable(CPP_modules
 #		mod_01/ex06/main.cpp mod_01/ex06/Harl.cpp mod_01/ex06/Harl.hpp
 
 #		mod_02/ex00/main.cpp mod_02/ex00/Fixed.cpp
-		mod_02/ex01/main.cpp mod_02/ex01/Fixed.cpp)
+#		mod_02/ex01/main.cpp mod_02/ex01/Fixed.cpp
+#		mod_02/ex02/main.cpp mod_02/ex02/Fixed.cpp
+		mod_02/ex03/main.cpp mod_02/ex03/Fixed.cpp mod_02/ex03/Point.cpp mod_02/ex03/bsp.cpp)

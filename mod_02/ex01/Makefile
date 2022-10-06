@@ -13,8 +13,8 @@ RED= \033[4;31m
 GREEN= \033[0;32m
 NC= \033[0;0m
 
-INC		=
-SRC		=
+INC		=	Fixed.hpp
+SRC		=	main.cpp Fixed.cpp
 
 all:		$(NAME)
 
