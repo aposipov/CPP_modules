@@ -1,5 +1,5 @@
 
-NAME	=	fixed
+NAME	=	fixed00
 
 CC		=	c++
 W_FLAGS	=	-Wall -Wextra -Werror
