@@ -1,3 +1,4 @@
+
 NAME	=	bsp
 
 CC		=	c++
