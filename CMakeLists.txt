@@ -21,4 +21,5 @@ add_executable(CPP_modules
 #		mod_02/ex02/main.cpp mod_02/ex02/Fixed.cpp
 #		mod_02/ex03/main.cpp mod_02/ex03/Fixed.cpp mod_02/ex03/Point.cpp mod_02/ex03/bsp.cpp
 
-		mod_03/ex00/main.cpp mod_03/ex00/ClapTrap.cpp)
+#		mod_03/ex00/main.cpp mod_03/ex00/ClapTrap.cpp
+		mod_03/ex01/main.cpp mod_03/ex01/ClapTrap.cpp mod_03/ex01/ScavTrap.cpp)
