@@ -15,5 +15,11 @@ https://www.cprogramming.com/tutorial/floating_point/understanding_floating_poin
 https://www.cprogramming.com/tutorial/floating_point/understanding_floating_point_representation.html  
 https://www.cprogramming.com/tutorial/floating_point/understanding_floating_point_printing.html
 </details> 
+<details>
+<summary>module_03</summary>
+description
+</details> 
 
 ## usefull
+[selfedu playlist](https://www.youtube.com/playlist?list=PLA0M1Bcd0w8xlChMBBUc9leNoOEfn-Y-G)  
+[SimpleCode playlist](https://www.youtube.com/playlist?list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r)  
