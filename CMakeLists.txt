@@ -23,4 +23,5 @@ add_executable(CPP_modules
 
 #		mod_03/ex00/main.cpp mod_03/ex00/ClapTrap.cpp
 #		mod_03/ex01/main.cpp mod_03/ex01/ClapTrap.cpp mod_03/ex01/ScavTrap.cpp
-		mod_03/ex02/main.cpp mod_03/ex01/ClapTrap.cpp mod_03/ex01/ScavTrap.cpp mod_03/ex02/FragTrap.cpp)
+#		mod_03/ex02/main.cpp mod_03/ex02/ClapTrap.cpp mod_03/ex02/ScavTrap.cpp mod_03/ex02/FragTrap.cpp
+		mod_03/ex03/main.cpp mod_03/ex03/ClapTrap.cpp mod_03/ex03/ScavTrap.cpp mod_03/ex03/FragTrap.cpp mod_03/ex03/DiamondTrap.cpp mod_03/ex03/DiamondTrap.hpp)
