@@ -3,7 +3,7 @@
 
 DiamondTrap::DiamondTrap()
 {
-	std::cout << " DiamondTrap Constructor " << this << " called" << std::endl;
+	std::cout << "  DiamondTrap Constructor " << this << " called" << std::endl;
 	_name = "Noname";
 	ClapTrap::_name = _name + "_clap_name";
 	_hitPoints = FragTrap::_hitPoints;
@@ -13,7 +13,7 @@ DiamondTrap::DiamondTrap()
 
 DiamondTrap::DiamondTrap(std::string name)
 {
-	std::cout << " DiamondTrap Constructor " << this << " called" << std::endl;
+	std::cout << "  DiamondTrap Constructor " << this << " called" << std::endl;
 	_name = name;
 	ClapTrap::_name = _name + "_clap_name";
 	_hitPoints = FragTrap::_hitPoints;
@@ -23,7 +23,7 @@ DiamondTrap::DiamondTrap(std::string name)
 
 DiamondTrap::DiamondTrap(const DiamondTrap & copy)
 {
-	std::cout << " DiamondTrap Copy Constructor " << this << " called" <<
+	std::cout << "  DiamondTrap Copy Constructor " << this << " called" <<
 	std::endl;
 	ClapTrap::_name = copy._name + "_clap_name";
 	_name = copy._name;
@@ -34,12 +34,12 @@ DiamondTrap::DiamondTrap(const DiamondTrap & copy)
 
 DiamondTrap::~DiamondTrap()
 {
-	std::cout << " DiamondTrap Destructor " << this << " called" << std::endl;
+	std::cout << "  DiamondTrap Destructor " << this << " called" << std::endl;
 }
 
 DiamondTrap &DiamondTrap::operator=(const DiamondTrap &copy)
 {
-	std::cout << " DiamondTrap Copy assignment operator called " << this << " "
+	std::cout << "  DiamondTrap Copy assignment operator called " << this << " "
 																	  "called" << std::endl;
 	ClapTrap::_name = copy._name + "_clap_name";
 	_name = copy._name;

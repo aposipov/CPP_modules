@@ -8,5 +8,6 @@ int main()
 
 	a.whoAmI();
 	b.whoAmI();
+	b.attack("targetX");
 	return 0;
 }
