@@ -24,7 +24,23 @@ Inheritance
 <details>
 <summary>module_04</summary>
 Sub-typing polymorphism, Abstract classes and interfaces
-</details> 
+</details>
+<details>
+<summary>module_05</summary>
+Sub-typing polymorphism, Abstract classes and interfaces
+</details>
+<details>
+<summary>module_06</summary>
+Sub-typing polymorphism, Abstract classes and interfaces
+</details>
+<details>
+<summary>module_07</summary>
+Sub-typing polymorphism, Abstract classes and interfaces
+</details>
+<details>
+<summary>module_08</summary>
+Sub-typing polymorphism, Abstract classes and interfaces
+</details>
 
 ## usefull
 [selfedu playlist](https://www.youtube.com/playlist?list=PLA0M1Bcd0w8xlChMBBUc9leNoOEfn-Y-G)  
