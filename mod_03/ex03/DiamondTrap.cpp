@@ -21,7 +21,8 @@ DiamondTrap::DiamondTrap(std::string name)
 	_attackDamage = FragTrap::_attackDamage;
 }
 
-DiamondTrap::DiamondTrap(const DiamondTrap & copy)
+DiamondTrap::DiamondTrap(const DiamondTrap & copy) : ClapTrap(), ScavTrap(),
+FragTrap()
 {
 	std::cout << "  DiamondTrap Copy Constructor " << this << " called" <<
 	std::endl;

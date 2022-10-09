@@ -14,7 +14,7 @@ GREEN= \033[0;32m
 NC= \033[0;0m
 
 INC		=	ClapTrap.hpp ScavTrap.hpp FragTrap.hpp DiamondTrap.hpp
-SRC		=	main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiaomondTrap.cpp
+SRC		=	main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 
 all:		$(NAME)
 
