@@ -21,7 +21,8 @@ FragTrap::FragTrap(std::string name)
 
 FragTrap::FragTrap(const FragTrap & copy)
 {
-	std::cout << " FragTrap Constructor " << this << " called" << std::endl;
+	std::cout << " FragTrap Copy Constructor " << this << " called" <<
+	std::endl;
 	_name = copy._name;
 	_hitPoints = copy._hitPoints;
 	_energyPoints = copy._energyPoints;
@@ -30,7 +31,7 @@ FragTrap::FragTrap(const FragTrap & copy)
 
 FragTrap &FragTrap::operator=(const FragTrap &copy)
 {
-	std::cout << " FragTrap Constructor " << this << " called" << std::endl;
+	std::cout << " FragTrap Copy assignment operator called " << this << " called" << std::endl;
 	_name = copy._name;
 	_hitPoints = copy._hitPoints;
 	_energyPoints = copy._energyPoints;
