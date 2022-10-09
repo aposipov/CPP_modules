@@ -21,7 +21,7 @@ ClapTrap::ClapTrap(std::string name)
 
 ClapTrap::ClapTrap(const ClapTrap & copy)
 {
-	std::cout << "Copy Constructor " << this << " called" << std::endl;
+	std::cout << "Copy Copy Constructor " << this << " called" << std::endl;
 	_name = copy._name;
 	_hitPoints = copy._hitPoints;
 	_energyPoints = copy._energyPoints;

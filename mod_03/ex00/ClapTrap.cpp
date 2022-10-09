@@ -1,7 +1,7 @@
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap() // this!!!
+ClapTrap::ClapTrap()
 {
 	std::cout << "Constructor " << this << " called" << std::endl;
 	this->_name = "Noname";

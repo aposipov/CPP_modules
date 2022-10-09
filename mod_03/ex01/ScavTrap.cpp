@@ -21,7 +21,8 @@ ScavTrap::ScavTrap(std::string name)
 
 ScavTrap::ScavTrap(const ScavTrap & copy) : ClapTrap()
 {
-	std::cout << " ScavStrap Constructor " << this << " called" << std::endl;
+	std::cout << " ScavStrap Copy Constructor " << this << " called" <<
+	std::endl;
 	_name = copy._name;
 	_hitPoints = copy._hitPoints;
 	_energyPoints = copy._energyPoints;
