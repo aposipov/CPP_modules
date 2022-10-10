@@ -15,6 +15,9 @@ int main()
 	meta->makeSound();
 	Cat testcat;
 	testcat.makeSound();
+	delete meta;
+	delete j;
+	delete i;
 
 	std::cout << " -----------Wrong Test-----------" << std::endl;
 
@@ -24,10 +27,6 @@ int main()
 	std::cout << cat->getType() << " " << std::endl;
 	cat->makeSound(); //will output the wrong sound!
 	wrongmeta->makeSound();
-
-	delete meta;
-	delete j;
-	delete i;
 	delete wrongmeta;
 	delete cat;
 
