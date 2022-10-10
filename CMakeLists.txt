@@ -27,4 +27,5 @@ add_executable(CPP_modules
 #		mod_03/ex03/main.cpp mod_03/ex03/ClapTrap.cpp mod_03/ex03/ScavTrap.cpp mod_03/ex03/FragTrap.cpp mod_03/ex03/DiamondTrap.cpp
 
 #		mod_04/ex00/main.cpp mod_04/ex00/Animal.cpp mod_04/ex00/Cat.cpp mod_04/ex00/Dog.cpp mod_04/ex00/WrongAnimal.cpp mod_04/ex00/WrongCat.cpp
-		mod_04/ex01/main.cpp mod_04/ex00/Animal.cpp mod_04/ex00/Cat.cpp mod_04/ex00/Dog.cpp mod_04/ex01/Brain.cpp mod_04/ex01/Brain.hpp)
+#		mod_04/ex01/main.cpp mod_04/ex00/Animal.cpp mod_04/ex00/Cat.cpp mod_04/ex00/Dog.cpp mod_04/ex01/Brain.cpp mod_04/ex01/Brain.hpp
+		mod_04/ex02/main.cpp mod_04/ex00/Animal.cpp mod_04/ex00/Cat.cpp mod_04/ex00/Dog.cpp mod_04/ex01/Brain.cpp mod_04/ex01/Brain.hpp)
