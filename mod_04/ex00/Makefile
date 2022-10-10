@@ -14,8 +14,8 @@ RED= \033[4;31m
 GREEN= \033[0;32m
 NC= \033[0;0m
 
-INC		=	Animal.hpp Cat.hpp Dog.hpp
-SRC		=	main.cpp Animal.cpp Cat.cpp Dog.cpp
+INC		=	Animal.hpp Cat.hpp Dog.hpp WrongAnimal.hpp WrongCat.hpp
+SRC		=	main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp
 
 all:		$(NAME)
 
@@ -37,3 +37,4 @@ fclean:		clean
 re:			fclean all
 
 test:		$(NAME)
+			valgrind ./animal
