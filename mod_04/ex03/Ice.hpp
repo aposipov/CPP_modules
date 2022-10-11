@@ -1,15 +1,21 @@
-//
-// Created by user on 11.10.22.
-//
 
-#ifndef CPP_MODULES_ICE_HPP
-#define CPP_MODULES_ICE_HPP
+#ifndef ICE_HPP
+#define ICE_HPP
 
+#include "AMateria.hpp"
 
-class Ice
-{
+class Ice: public AMateria {
 
+public:
+	Ice();
+	Ice(std::string const &type);
+	Ice(Ice const &copy);
+	~Ice();
+	Ice &operator=(Ice const &copy);
+
+	AMateria *clone() const;
+	void use(ICharacter& target);
 };
 
 
-#endif //CPP_MODULES_ICE_HPP
+#endif
