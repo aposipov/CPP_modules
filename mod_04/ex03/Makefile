@@ -1,7 +1,7 @@
 
-NAME	=	interface
+NAME	=	interface1
 CC		=	c++
-W_FLAGS	=	-Wall -Wextra -Werror
+W_FLAGS	=	-Wall  -Werror #-Wextra
 S_FLAGS =	-std=c++98
 RM		=	rm -rf
 OBJ 	=	$(patsubst %.cpp, %.o, $(SRC))
@@ -13,7 +13,7 @@ RED= \033[4;31m
 GREEN= \033[0;32m
 NC= \033[0;0m
 
-INC		=	Amateria.hpp Character.hpp Cure.hpp Ice.hpp MateriaSource.hpp ICharacter.hpp IMateriaSource.hpp
+INC		=	AMateria.hpp Character.hpp Cure.hpp Ice.hpp MateriaSource.hpp ICharacter.hpp IMateriaSource.hpp
 SRC		=	main.cpp AMateria.cpp Character.cpp Cure.cpp Ice.cpp MateriaSource.cpp
 
 all:		$(NAME)
@@ -36,4 +36,4 @@ fclean:		clean
 re:			fclean all
 
 test:		$(NAME)
-			valgrind ./interface
+			valgrind ./interface1

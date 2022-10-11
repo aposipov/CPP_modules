@@ -33,6 +33,5 @@ std::string const &AMateria::getType() const
 
 void AMateria::use(ICharacter &target)
 {
-//	(void)target.getName();
 	std::cout << target.getName() << " use materia" << std::endl;
 }

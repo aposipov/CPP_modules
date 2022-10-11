@@ -1,15 +1,23 @@
-//
-// Created by user on 11.10.22.
-//
 
-#ifndef CPP_MODULES_MATERIASOURCE_HPP
-#define CPP_MODULES_MATERIASOURCE_HPP
+#ifndef MATERIASOURCE_HPP
+#define MATERIASOURCE_HPP
 
+#include "IMateriaSource.hpp"
 
-class MateriaSource
-{
+class MateriaSource : public IMateriaSource {
+
+public:
+	MateriaSource();
+	MateriaSource(const MateriaSource& other);
+	~MateriaSource();
+	MateriaSource& operator=(const MateriaSource& other);
+
+	void learnMateria(AMateria *m);
+	AMateria * createMateria(const std::string &type);
+
+private:
+	AMateria *material[4];
 
 };
 
-
-#endif //CPP_MODULES_MATERIASOURCE_HPP
+#endif
