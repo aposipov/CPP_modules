@@ -8,26 +8,25 @@ int main()
 	const Animal* i = new Cat();
 	delete j;//should not create a leak
 	delete i;
-
-
-
-	std::cout << std::endl;
-	Animal* animalArray[4];
-	for (int i = 0; i < 4; i++)
-	{
-		if (i < 2)
-			animalArray[i] = new Dog();
-		else
-			animalArray[i] = new Cat();
+	std::cout << std::endl << "----- Create animals -----" << std::endl;
+	Animal* animals[10];
+	for (int n = 1; n <= 10; n++) {
+		std::cout << std::endl << "create " << n << std::endl;
+		if (n % 2 == 0) {
+			animals[n] = new Cat();
+		} else {
+			animals[n] = new Dog();
+		}
 	}
-	for (int i = 0; i < 4; i++)
-		delete animalArray[i];
+	std::cout << std::endl << "----- Make sound -----" << std::endl <<
+	std::endl;
+	animals[1]->makeSound();
+	animals[2]->makeSound();
 
-	std::cout << std::endl;
-	Dog basic;
-	{
-		Dog tmp = basic;
+	std::cout << std::endl << "----- Delete animals -----" << std::endl;
+	for (int n = 1; n <= 10; n++) {
+		std::cout << std::endl << "delete " << n << std::endl;
+		delete animals[n];
 	}
-
 	return 0;
 }

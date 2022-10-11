@@ -30,7 +30,8 @@ Cat &Cat::operator=(const Cat &copy)
 	std::cout << " Cat -> Copy assignment operator called " << this << " called"
 	<< std::endl;
 	_type = copy._type;
-	delete _brain;
+	if (_brain)
+		delete _brain;
 	_brain = new Brain(*(copy._brain));
 	return *this;
 }

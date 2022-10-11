@@ -13,8 +13,6 @@ int main()
 	i->makeSound(); //will output the cat sound!
 	j->makeSound();
 	meta->makeSound();
-	Cat testcat;
-	testcat.makeSound();
 	delete meta;
 	delete j;
 	delete i;

@@ -5,7 +5,7 @@ Animal::Animal()
 {
 	std::cout << "Animal -> Default Constructor " << this << " called"
 	<< std::endl;
-	_type = "unknown type";
+	_type = "animal type";
 }
 
 Animal::Animal(std::string name)

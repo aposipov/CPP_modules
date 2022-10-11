@@ -1,5 +1,5 @@
 
-NAME	=	brain
+NAME	=	animal
 CC		=	c++
 W_FLAGS	=	-Wall -Wextra -Werror
 S_FLAGS =	-std=c++98
@@ -36,4 +36,4 @@ fclean:		clean
 re:			fclean all
 
 test:		$(NAME)
-			valgrind ./brain
+			valgrind ./animal
