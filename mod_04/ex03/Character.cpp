@@ -63,4 +63,5 @@ void Character::use(int idx, ICharacter& target)
 {
 	if (idx >= 0 &&  idx <= 3 && this->_inventory[idx] != NULL)
 		this->_inventory[idx]->use(target);
+//	std::cout << _name <<" use " << _inventory[idx] << std::endl;
 }
