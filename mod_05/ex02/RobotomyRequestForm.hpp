@@ -1,0 +1,15 @@
+//
+// Created by user on 13.10.22.
+//
+
+#ifndef CPP_MODULES_ROBOTOMYREQUESTFORM_HPP
+#define CPP_MODULES_ROBOTOMYREQUESTFORM_HPP
+
+
+class RobotomyRequestForm
+{
+
+};
+
+
+#endif //CPP_MODULES_ROBOTOMYREQUESTFORM_HPP

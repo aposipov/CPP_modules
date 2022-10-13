@@ -1,0 +1,15 @@
+//
+// Created by user on 13.10.22.
+//
+
+#ifndef CPP_MODULES_PRESIDENTIALPARDONFORM_HPP
+#define CPP_MODULES_PRESIDENTIALPARDONFORM_HPP
+
+
+class PresidentialPardonForm
+{
+
+};
+
+
+#endif //CPP_MODULES_PRESIDENTIALPARDONFORM_HPP
