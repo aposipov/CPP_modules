@@ -5,26 +5,30 @@ int main()
 {
 	std::cout << " --------------- TEST 1 ---------------" << std::endl;
 	try {
-		Form testf("testf1", 1, 150);
-		std::cout << testf << std::endl;
-		Bureaucrat test("test1", 100);
+		Bureaucrat man("Man1", 100);
+		Form form("Form1", -1, 155);
+		std::cout << form << std::endl;
 	}
 	catch (std::exception &e) {
 		std::cout << e.what() << std::endl;
 	}
 	std::cout << " --------------- TEST 2 ---------------" << std::endl;
 	try {
-		Bureaucrat test("test2", 151);
+		Bureaucrat man("Man2", 100);
+		Form form("From2", 90, 155);
 	}
 	catch (std::exception &e) {
 		std::cout << e.what() << std::endl;
 	}
 	std::cout << " --------------- TEST 3 ---------------" << std::endl;
 	try {
-		Bureaucrat test("test3", 100);
-		std::cout << test << std::endl;
-		test.incGrade();
-		std::cout << test.getGrade() << std::endl;
+		Bureaucrat man("Man3", 100);
+		std::cout << man << std::endl;
+		man.incGrade();
+		std::cout << man.getGrade() << std::endl;
+		Form form("Form3", 110, 140);
+		std::cout << form << std::endl;
+		man.signForm(form);
 	}
 	catch (std::exception &e) {
 		std::cout << e.what() << std::endl;
@@ -32,31 +36,13 @@ int main()
 
 	std::cout << " --------------- TEST 4 ---------------" << std::endl;
 	try {
-		Bureaucrat test("test4", 100);
-		std::cout << test << std::endl;
-		test.decGrade();
-		std::cout << test.getGrade() << std::endl;
-	}
-	catch (std::exception &e) {
-		std::cout << e.what() << std::endl;
-	}
-	std::cout << " --------------- TEST 5 ---------------" << std::endl;
-	try {
-		Bureaucrat test("test5", 1);
-		std::cout << test << std::endl;
-		test.incGrade();
-		std::cout << test.getGrade() << std::endl;
-	}
-	catch (std::exception &e) {
-		std::cout << e.what() << std::endl;
-	}
-	std::cout << " --------------- TEST 6 ---------------" << std::endl;
-	try {
-		Bureaucrat test("test6", 149);
-		std::cout << test << std::endl;
-		test.decGrade();
-		test.decGrade();
-		std::cout << test.getGrade() << std::endl;
+		Bureaucrat man("Man4", 100);
+		std::cout << man << std::endl;
+		man.decGrade();
+		std::cout << man.getGrade() << std::endl;
+		Form form("Form4", 90, 140);
+		std::cout << form << std::endl;
+		man.signForm(form);
 	}
 	catch (std::exception &e) {
 		std::cout << e.what() << std::endl;
