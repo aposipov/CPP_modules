@@ -64,6 +64,11 @@ void Bureaucrat::decGrade()
 	_grade++;
 }
 
+void Bureaucrat::signForm(Form &target)
+{
+	
+}
+
 const char* Bureaucrat::GradeTooHighException::what() const throw()
 {
 	return "Grade is too high. Max grade is 1";

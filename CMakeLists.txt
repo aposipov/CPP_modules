@@ -30,4 +30,6 @@ add_executable(CPP_modules
 #		mod_04/ex01/main.cpp mod_04/ex01/Animal.cpp mod_04/ex01/Cat.cpp mod_04/ex01/Dog.cpp mod_04/ex01/Brain.cpp mod_04/ex01/Brain.hpp
 #		mod_04/ex02/main.cpp mod_04/ex02/Animal.cpp mod_04/ex02/Cat.cpp mod_04/ex02/Dog.cpp mod_04/ex02/Brain.cpp mod_04/ex02/Brain.hpp
 #		mod_04/ex03/main.cpp mod_04/ex03/AMateria.cpp mod_04/ex03/Character.cpp mod_04/ex03/Cure.cpp mod_04/ex03/Ice.cpp mod_04/ex03/MateriaSource.cpp
-		mod_05/ex00/main.cpp mod_05/ex00/Bureaucrat.cpp)
+#		mod_05/ex00/main.cpp mod_05/ex00/Bureaucrat.cpp
+		mod_05/ex01/main.cpp mod_05/ex01/Bureaucrat.cpp mod_05/ex01/Form.cpp
+		)
