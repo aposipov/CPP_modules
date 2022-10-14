@@ -13,8 +13,14 @@ RED= \033[4;31m
 GREEN= \033[0;32m
 NC= \033[0;0m
 
-INC		=	Bureaucrat.hpp Form.hpp
-SRC		=	main.cpp Bureaucrat.cpp Form.cpp
+INC		=	Bureaucrat.hpp Form.hpp \
+			ShrubberyCreationForm.hpp \
+            RobotomyRequestForm.hpp \
+            PresidentialPardonForm.hpp
+SRC		=	main.cpp Bureaucrat.cpp Form.cpp \
+			ShrubberyCreationForm.cpp \
+			RobotomyRequestForm.cpp \
+			PresidentialPardonForm.cpp
 
 all:		$(NAME)
 

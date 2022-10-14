@@ -1,15 +1,25 @@
-//
-// Created by user on 13.10.22.
-//
 
-#ifndef CPP_MODULES_ROBOTOMYREQUESTFORM_HPP
-#define CPP_MODULES_ROBOTOMYREQUESTFORM_HPP
+#ifndef ROBOTOMYREQUESTFORM_HPP
+#define ROBOTOMYREQUESTFORM_HPP
 
+#include "Form.hpp"
+#include <cstdlib>
+#include <unistd.h>
 
-class RobotomyRequestForm
-{
+class RobotomyRequestForm : Form {
 
+public:
+	RobotomyRequestForm();
+	RobotomyRequestForm(std::string target);
+	RobotomyRequestForm(RobotomyRequestForm const & copy);
+	~RobotomyRequestForm();
+	RobotomyRequestForm &operator=(RobotomyRequestForm const & copy);
+
+	void	execute(Bureaucrat const & executor) const;
+
+private:
+	std::string _target;
 };
 
 
-#endif //CPP_MODULES_ROBOTOMYREQUESTFORM_HPP
+#endif
