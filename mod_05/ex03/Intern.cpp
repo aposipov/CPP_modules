@@ -40,7 +40,7 @@ Form * Intern::makeForm(std::string nameForm, std::string targetForm)
 		if (nameForm == names[i])
 		{
 			std::cout << "Intern create "<< nameForm << std::endl;
-			return funcs[i](nameForm);
+			return funcs[i](targetForm);
 		}
 	throw Intern::UnknownFormException();
 }
