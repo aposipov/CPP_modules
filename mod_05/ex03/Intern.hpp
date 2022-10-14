@@ -14,7 +14,7 @@ public:
 	~Intern();
 	Intern & operator=(const Intern & copy);
 
-	Form * makeform(std::string nameForm, std::string targetForm);
+	Form * makeForm(std::string nameForm, std::string targetForm);
 	class UnknownFormException : public std::exception {
 		virtual const char* what() const throw();
 	};

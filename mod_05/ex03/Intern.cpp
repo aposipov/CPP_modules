@@ -32,17 +32,18 @@ static Form * getRRF(std::string target) {return new RobotomyRequestForm
 static Form * getPPF(std::string target) {return new PresidentialPardonForm
 (target);}
 
-Form * Intern::makeform(std::string nameForm, std::string targetForm)
+Form * Intern::makeForm(std::string nameForm, std::string targetForm)
 {
 	Form * (*funcs[3])(std::string) = {getSCF, getRRF, getPPF};
 	std::string names[3] = {"ShrubberyCreation","RobotomyRequest", "PresidentialPardon"};
 	for(int i = 0; i < 3; i++)
 		if (nameForm == names[i])
 		{
-			std::cout << "Intern create"<< nameForm << std::endl;
+			std::cout << "Intern create "<< nameForm << std::endl;
 			return funcs[i](nameForm);
 		}
 	throw Intern::UnknownFormException();
 }
 
-const char* Intern::UnknownFormException::what() const throw() { return ("unknown form"); }
+const char* Intern::UnknownFormException::what() const throw()
+{ return ("unknown form"); }
