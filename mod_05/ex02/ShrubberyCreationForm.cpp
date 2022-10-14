@@ -19,12 +19,13 @@ ShrubberyCreationForm::ShrubberyCreationForm(std::string target) : Form
 ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm &copy) : Form(copy)
 {
 	_target = copy._target;
-	std::cout << "ShrubberyCreationForm -> Copy Constructor called" << std::endl;
+	std::cout << " ShrubberyCreationForm -> Copy Constructor called" <<
+	std::endl;
 }
 
 ShrubberyCreationForm::~ShrubberyCreationForm()
 {
-	std::cout << "ShrubberyCreationForm -> Destructor called" << std::endl;
+	std::cout << " ShrubberyCreationForm -> Destructor called" << std::endl;
 }
 
 ShrubberyCreationForm & ShrubberyCreationForm::operator=(ShrubberyCreationForm const & copy)
@@ -32,6 +33,8 @@ ShrubberyCreationForm & ShrubberyCreationForm::operator=(ShrubberyCreationForm c
 	if (this == &copy)
 		return *this;
 	_target = copy._target;
+	std::cout << " ShrubberyCreationForm -> Copy assignment operator called"
+	<< std::endl;
 	return *this;
 }
 

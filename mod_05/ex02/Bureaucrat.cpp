@@ -83,7 +83,7 @@ void Bureaucrat::executeForm(const Form &form)
 		std::cout << _name << " executed " << form.getName() << std::endl;
 	}
 	catch (std::exception &e) {
-		std::cerr << _name << " couldn't execute " << form.getName()
+		std::cout << _name << " couldn't execute " << form.getName()
 		<< " because " << e.what() << std::endl;
 	}
 }

@@ -1,15 +1,23 @@
-//
-// Created by user on 13.10.22.
-//
-
-#ifndef CPP_MODULES_PRESIDENTIALPARDONFORM_HPP
-#define CPP_MODULES_PRESIDENTIALPARDONFORM_HPP
 
 
-class PresidentialPardonForm
-{
+#ifndef PRESIDENTIALPARDONFORM_HPP
+#define PRESIDENTIALPARDONFORM_HPP
 
+#include "Form.hpp"
+
+class PresidentialPardonForm : public Form {
+
+public:
+	PresidentialPardonForm();
+	PresidentialPardonForm(std::string target);
+	PresidentialPardonForm(PresidentialPardonForm const & copy);
+	~PresidentialPardonForm();
+	PresidentialPardonForm &operator=(PresidentialPardonForm const & copy);
+
+	void	execute(Bureaucrat const & executor) const;
+
+private:
+	std::string _target;
 };
 
-
-#endif //CPP_MODULES_PRESIDENTIALPARDONFORM_HPP
+#endif

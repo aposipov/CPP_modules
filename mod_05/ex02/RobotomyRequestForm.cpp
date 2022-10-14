@@ -26,7 +26,7 @@ Form(copy)
 
 RobotomyRequestForm::~RobotomyRequestForm()
 {
-	std::cout << "RobotomyRequestForm -> Destructor called" << std::endl;
+	std::cout << " RobotomyRequestForm -> Destructor called" << std::endl;
 }
 
 RobotomyRequestForm &RobotomyRequestForm::operator=(const RobotomyRequestForm &copy)
@@ -34,6 +34,8 @@ RobotomyRequestForm &RobotomyRequestForm::operator=(const RobotomyRequestForm &c
 	if (this == &copy)
 		return *this;
 	_target = copy._target;
+	std::cout << " RobotomyRequestForm -> Copy assignment operator called"
+	<< std::endl;
 	return *this;
 }
 

@@ -6,7 +6,7 @@
 #include <cstdlib>
 #include <unistd.h>
 
-class RobotomyRequestForm : Form {
+class RobotomyRequestForm : public Form {
 
 public:
 	RobotomyRequestForm();
@@ -20,6 +20,5 @@ public:
 private:
 	std::string _target;
 };
-
 
 #endif
