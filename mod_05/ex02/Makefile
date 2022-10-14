@@ -42,4 +42,4 @@ fclean:		clean
 re:			fclean all
 
 test:		$(NAME)
-			valgrind ./bureaucrat
+			valgrind ./$(NAME)
