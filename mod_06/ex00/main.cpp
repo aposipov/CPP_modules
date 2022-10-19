@@ -4,8 +4,8 @@
 #include <limits>
 #include <cmath>
 
-static void	printChar(double num) {
-
+static void	toChar(double num)
+{
 	std::cout << "char: ";
 	if (!isascii(num) || std::isnan(num) || std::isinf(num))
 		std::cout << "impossible";
@@ -16,8 +16,8 @@ static void	printChar(double num) {
 	std::cout << std::endl;
 }
 
-static void	printInt(double num) {
-
+static void	toInt(double num)
+{
 	std::cout << "int: ";
 	if (num < std::numeric_limits<int>::min() || num > std::numeric_limits<int>::max() ||
 		std::isinf(num) || std::isnan(num))
@@ -27,8 +27,8 @@ static void	printInt(double num) {
 	std::cout << std::endl;
 }
 
-static void printFloat(double num) {
-
+static void toFloat(double num)
+{
 	std::cout << "float: ";
 	if (std::isinf(num) || std::isnan(num))
 		std::cout << num;
@@ -39,8 +39,8 @@ static void printFloat(double num) {
 	std::cout << "f" << std::endl;
 }
 
-static void printDouble(double num) {
-
+static void toDouble(double num)
+{
 	std::cout << "double: ";
 	if (std::isinf(num) || std::isnan(num))
 		std::cout << num;
@@ -51,25 +51,22 @@ static void printDouble(double num) {
 	std::cout << std::endl;
 }
 
-int main(int argc, char** argv) {
+int main(int argc, char** argv)
+{
+	double num;
 
-	if (argc != 2) {
-		std::cout << "Usage: ./convert <literal of scalar type>" << std::endl;
+	if (argc != 2)
+	{
+		std::cout << "./convert <your value>" << std::endl;
 		return 1;
 	}
-
-	double num;
-	if (!argv[1][1] && !std::isdigit(argv[1][0]))
-		num = static_cast<double>(argv[1][0]);
-	else
-		num = std::strtod(argv[1], NULL);
-
+	num = std::strtod(argv[1], NULL);
 	std::cout.precision(1);
 	std::cout << std::fixed;
-	printChar(num);
-	printInt(num);
-	printFloat(num);
-	printDouble(num);
+	toChar(num);
+	toInt(num);
+	toFloat(num);
+	toDouble(num);
 
 	return 0;
 }
