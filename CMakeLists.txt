@@ -34,5 +34,8 @@ add_executable(CPP_modules
 #		mod_05/ex01/main.cpp mod_05/ex01/Bureaucrat.cpp mod_05/ex01/Form.cpp
 #		mod_05/ex02/main.cpp mod_05/ex02/Bureaucrat.cpp mod_05/ex02/Form.cpp
 #		mod_05/ex02/ShrubberyCreationForm.cpp mod_05/ex02/RobotomyRequestForm.cpp mod_05/ex02/PresidentialPardonForm.cpp
-		mod_05/ex03/main.cpp mod_05/ex03/Bureaucrat.cpp mod_05/ex03/Form.cpp mod_05/ex03/Intern.cpp
-		mod_05/ex03/ShrubberyCreationForm.cpp mod_05/ex03/RobotomyRequestForm.cpp mod_05/ex03/PresidentialPardonForm.cpp mod_05/ex03/Intern.hpp)
+#		mod_05/ex03/main.cpp mod_05/ex03/Bureaucrat.cpp mod_05/ex03/Form.cpp mod_05/ex03/Intern.cpp
+#		mod_05/ex03/ShrubberyCreationForm.cpp mod_05/ex03/RobotomyRequestForm.cpp mod_05/ex03/PresidentialPardonForm.cpp mod_05/ex03/Intern.hpp
+
+		mod_06/ex00/main.cpp
+		)
