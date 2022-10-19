@@ -60,7 +60,10 @@ int main(int argc, char** argv)
 		std::cout << "./convert <your value>" << std::endl;
 		return 1;
 	}
-	num = std::strtod(argv[1], NULL);
+	if (!argv[1][1] && !std::isdigit(argv[1][0]))
+		num = static_cast<double>(argv[1][0]);
+	else
+		num = std::strtod(argv[1], NULL);
 	std::cout.precision(1);
 	std::cout << std::fixed;
 	toChar(num);
