@@ -40,4 +40,6 @@ add_executable(CPP_modules
 #		mod_06/ex00/main.cpp
 #		mod_06/ex01/main.cpp
 #		mod_06/ex02/main.cpp mod_06/ex02/Base.cpp mod_06/ex02/A.cpp mod_06/ex02/B.cpp mod_06/ex02/C.cpp
-		mod_07/ex00/main.cpp )
+
+#		mod_07/ex00/main.cpp
+		mod_07/ex01/main.cpp)
