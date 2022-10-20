@@ -1,7 +1,7 @@
 
 #include "iter.h"
 
-int main(void)
+int main()
 {
 	std::cout << std::endl << "< CHAR >" << std::endl;
 	char arrCh[4] = {'a', 'b', 'c', 'd'};
