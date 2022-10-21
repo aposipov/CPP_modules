@@ -43,5 +43,6 @@ add_executable(CPP_modules
 
 #		mod_07/ex00/main.cpp
 #		mod_07/ex01/main.cpp
-		mod_07/ex02/main.cpp mod_07/ex02/Array.hpp mod_07/ex02/Array.tpp
-		)
+#		mod_07/ex02/main.cpp mod_07/ex02/Array.hpp mod_07/ex02/Array.tpp
+
+		mod_08/ex00/main.cpp mod_08/ex00/easyfind.hpp)
