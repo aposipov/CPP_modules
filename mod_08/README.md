@@ -10,4 +10,6 @@ https://habr.com/ru/post/664044/
 Итератор — это такая структура данных, которая используется для обращения к определенному элементу в контейнерах STL. Обычно из используют с контейнерамиset, list , а у вектора для этого применяют индексы.  
   
 https://codelessons.ru/cplusplus/iteratory-v-c-vvedenie.html  
-https://metanit.com/cpp/tutorial/7.3.php
+https://metanit.com/cpp/tutorial/7.3.php  
+  
+https://bestprogrammer.ru/programmirovanie-i-razrabotka/kak-initsializirovat-std-vector-v-c-s-primerami
