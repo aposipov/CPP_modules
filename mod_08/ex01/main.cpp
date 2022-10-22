@@ -37,7 +37,7 @@ int main()
 	try
 	{
 		Span sp(5);
-		sp.addNumber(1);
+		sp.addNumber(99);
 		sp.addNumber(3);
 		sp.addNumber(17);
 		sp.addNumber(9);

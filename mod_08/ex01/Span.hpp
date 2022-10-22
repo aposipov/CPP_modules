@@ -3,7 +3,6 @@
 #define SPAN_HPP
 
 #include <iostream>
-//#include <iterator>
 #include <algorithm>
 #include <vector>
 
