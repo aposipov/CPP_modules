@@ -48,4 +48,7 @@ Sub-typing polymorphism, Abstract classes and interfaces
 ## usefull sites
 https://cplusplus.com/  
 https://ru.cppreference.com/w/  
-http://cppstudio.com/  
+http://cppstudio.com/
+## stepik courses
+https://stepik.org/course/7/syllabus  
+https://stepik.org/course/3206/syllabus
