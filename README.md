@@ -68,6 +68,8 @@ https://stepik.org/course/3206/syllabus
 
 - Андрея Александреску, "Современное проектирование на С++".
 - Бьерн Страуструп, "Дизайн и эволюция языка C++".  
+
 Более подробный список можно книг по C++ можно найти в этих постах:  
+
 http://alenacpp.blogspot.com/2006/09/c.html  
 http://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list
