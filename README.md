@@ -27,19 +27,21 @@ Sub-typing polymorphism, Abstract classes and interfaces
 </details>
 <details>
 <summary>module_05</summary>
-Sub-typing polymorphism, Abstract classes and interfaces
+Repetition and Exceptions
 </details>
 <details>
 <summary>module_06</summary>
+C++ casts  
+  
 https://cplusplus.com/doc/tutorial/typecasting/
 </details>
 <details>
 <summary>module_07</summary>
-Sub-typing polymorphism, Abstract classes and interfaces
+C++ templates
 </details>
 <details>
 <summary>module_08</summary>
-Sub-typing polymorphism, Abstract classes and interfaces
+Templated containers, iterators, algorithms
 </details>
 
 ## usefull video
