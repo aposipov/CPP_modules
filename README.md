@@ -42,6 +42,10 @@ Sub-typing polymorphism, Abstract classes and interfaces
 Sub-typing polymorphism, Abstract classes and interfaces
 </details>
 
-## usefull
-[selfedu playlist](https://www.youtube.com/playlist?list=PLA0M1Bcd0w8xlChMBBUc9leNoOEfn-Y-G)  
+## usefull video
+[Selfedu playlist](https://www.youtube.com/playlist?list=PLA0M1Bcd0w8xlChMBBUc9leNoOEfn-Y-G)  
 [SimpleCode playlist](https://www.youtube.com/playlist?list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r)  
+## usefull sites
+https://cplusplus.com/  
+https://ru.cppreference.com/w/  
+http://cppstudio.com/  
