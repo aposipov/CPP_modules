@@ -90,4 +90,8 @@ http://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list
 - Питер Нортон Скотт Мейерс «Эффективное использование STL»
 - Николай Джосьютис «C++ Стандартная библиотека. Для профессионалов»
 - П. Плаугер, А. Степанов «STL. Стандартная библиотека шаблонов C++»
-
+  
+А еще здорово помогут:  
+- [Сайт стандартизации С++](https://isocpp.org/)
+- [YouTube-канал о С и С++](https://www.youtube.com/channel/UCtLKO1Cb2GVNrbU7Fi0pM0w/videos)
+- [Русскоязычное сообщество разработчиков](https://vk.com/lang_cpp)
